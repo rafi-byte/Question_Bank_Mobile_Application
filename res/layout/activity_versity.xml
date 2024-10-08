@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdback">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#9C27B0">
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Question Bank"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <!-- Top Left Button -->
+                <ImageButton
+                    android:id="@+id/buetButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/square_button_background"
+                    android:src="@drawable/buet"
+                    android:scaleType="fitCenter"
+                    android:textSize="14sp" />
+
+                <!-- Top Right Button -->
+                <ImageButton
+                    android:id="@+id/kuetButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/square_button_background"
+                    android:src="@drawable/cuet"
+                    android:scaleType="fitCenter"
+                    android:textSize="14sp" />
+
+                <!-- Bottom Left Button -->
+                <ImageButton
+                    android:id="@+id/duButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/square_button_background"
+                    android:src="@drawable/ewu"
+                    android:scaleType="fitCenter"
+                    android:textSize="14sp" />
+
+                <!-- Bottom Right Button -->
+                <ImageButton
+                    android:id="@+id/juButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/square_button_background"
+                    android:src="@drawable/nsu"
+                    android:scaleType="fitCenter"
+                    android:textSize="14sp" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

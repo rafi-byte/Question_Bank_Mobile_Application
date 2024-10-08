@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewPaymentIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bkash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Payment Icon"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock the Question Bank with a secure payment."
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_below="@id/imageViewPaymentIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPaymentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewPaymentInfo"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="Enter Amount"
+        android:textColorHint="#CCCCCC"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:textColor="#333333"/>
+
+    <Button
+        android:id="@+id/buttonMakePayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPaymentAmount"
+        android:layout_marginTop="24dp"
+        android:text="Make Payment"
+        android:textColor="#FFFFFF"
+        android:background="#FF1493"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have to pay 150 taka"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_below="@id/buttonMakePayment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

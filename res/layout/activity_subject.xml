@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdback">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#9C27B0"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Question Bank"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bangla"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#E75480"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="70dp"
+                android:text="Bangla"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/English"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#E75480"
+                android:text="English"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Math"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#E75480"
+                android:text="Math"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>
